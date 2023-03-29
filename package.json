@@ -1,0 +1,30 @@
+{
+    "name": "tsbytes",
+    "version": "1.0.0",
+    "description": "Convert arbitrary unit strings into byte counts",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+        "lib",
+        "LICENSE"
+    ],
+    "scripts": {
+        "prepare": "npm run build",
+        "build": "rmdir /S /Q lib&tsc",
+        "test": "vitest"
+    },
+    "keywords": [
+        "bytes",
+        "b",
+        "kb",
+        "mb",
+        "gb",
+        "tb"
+    ],
+    "author": "Nguyen Quoc Tuan",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "vitest": "^0.29.8"
+    }
+}
